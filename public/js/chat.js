@@ -29,7 +29,5 @@ socket.on("new message", (data) =>
 
 // Shut down cleanly upon server shutdown message
 socket.on("shutdown", (data) => {
-    socket.disconnect();
-    alert(data.message);
-    window.location = "/";
+    window.location = `/?alert=${data.message}`;
 });
