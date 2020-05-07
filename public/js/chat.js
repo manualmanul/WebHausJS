@@ -31,3 +31,11 @@ socket.on("new message", (data) =>
 socket.on("shutdown", (data) => {
     window.location = `/?alert=${data.message}`;
 });
+
+socket.on('connect_failed', function() {
+    window.location = "/?alert=" + "Sorry, a problem occured while connecting to server.<br>Please try again later.";
+});
+
+socket.on('reconnect_failed', function() {
+    window.location = "/?alert=" + "Lost connection with the server.<br>Please try connecting again later.";
+});
