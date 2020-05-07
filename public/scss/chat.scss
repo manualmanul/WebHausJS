@@ -18,6 +18,7 @@ body {
 
     li {
         padding: 5px 10px;
+        overflow-wrap: break-word;
         &:nth-child(odd) {
             background: #eee;
         }
