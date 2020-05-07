@@ -11,9 +11,8 @@ Server part of this project can be found here: [manualmanul/HausJS](https://gith
 ### Features
 
 * Landing page and chat page
-* HTML5 notifications and sound effects for mentions
 * Feedback messages (server unavailable, nickname taken etc.)
-* Keepalive system
+* Built with Bootstrap CSS and pure JavaScript to reduce complexity
 
 ### Demonstration
 
@@ -27,15 +26,25 @@ To set up this project on your machine, follow these instructions:
 
 ### Prerequisites
 
-* Node.js 12.x or newer
+* web server that can host the `public/` directory
+
+OR
+
+* Node.js 10.x or newer
 * npm
-* Web server to host the Web Client
 
 ### Installing
+
+Using a conventional web server like Nginx:
+
+* serve the `/public` to your clients
+
+Using a Node.JS web server:
 
 ```shell
 git clone https://github.com/manualmanul/WebHausJS.git
 cd WebHausJS
+npm
 node server.js
 ```
 
