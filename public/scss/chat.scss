@@ -53,16 +53,24 @@ body {
     .sendButton {
         text-align: center;
         width: 9%;
-        background: rgb(130, 224, 255);
+        background: #5fbae9;
         border: none;
         padding: 10px;
+
+        &:hover {
+            background: #39ace7;
+        }
     }
 
     .leaveButton {
         text-align: center;
         width: 9%;
-        background: rgb(255, 130, 130);
+        background: #ff8282;
         border: none;
         padding: 10px;
+
+        &:hover {
+            background: #e47a86;
+        }
     }
 }

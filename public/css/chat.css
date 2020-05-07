@@ -41,12 +41,16 @@ body {
   #sendForm .sendButton {
     text-align: center;
     width: 9%;
-    background: #82e0ff;
+    background: #5fbae9;
     border: none;
     padding: 10px; }
+    #sendForm .sendButton:hover {
+      background: #39ace7; }
   #sendForm .leaveButton {
     text-align: center;
     width: 9%;
     background: #ff8282;
     border: none;
     padding: 10px; }
+    #sendForm .leaveButton:hover {
+      background: #e47a86; }
