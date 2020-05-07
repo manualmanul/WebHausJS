@@ -2,6 +2,10 @@
 
 WebHausJS is a Socket.io client for [HausJS](https://github.com/manualmanul/HausJS)
 
+This is a solution for an interview test task by Ubiquiti Latvia.
+
+Server part of this project can be found here: [manualmanul/HausJS](https://github.com/manualmanul/HausJS)
+
 ## General information
 
 ### Features
