@@ -14,12 +14,6 @@ Server part of this project can be found here: [manualmanul/HausJS](https://gith
 * Feedback messages (server unavailable, nickname taken etc.)
 * Built with Bootstrap CSS and pure JavaScript to reduce complexity
 
-### Demonstration
-
-You can find a demonstration server here: [hausjs.catto.io](https://hausjs.catto.io)
-
-Please note that this server is unmoderated and accessible to everyone. I've added bot users Ian and Karen that send messages between each other for demonstration purposes.
-
 ## Getting started
 
 To set up this project on your machine, follow these instructions:
