@@ -6,7 +6,9 @@
 
 body {
     font-size: 13px;
-    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica,
+        Arial, sans-serif;
 }
 
 #messageList {
@@ -34,11 +36,11 @@ body {
     bottom: 0;
     width: 100%;
 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
     align-content: stretch;
 
     input {
