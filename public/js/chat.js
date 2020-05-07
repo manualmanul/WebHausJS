@@ -1,13 +1,19 @@
 var socket = io("http://localhost:3000");
 const chatForm = document.getElementById("sendForm");
 
-appendMessage = (nickname, message, type, timestamp) => {
+window.onload = () => {
+    let nickname = new URL(window.location.href).searchParams.get("nickname");
+    nickname = nickname === null ? `HausUser${Math.floor(Math.random() * 10000)}` : nickname;
+    socket.emit("join", {nickname: nickname})
+}
+
+const appendMessage = (message, type) => {
     const messageEl = document.createElement("li");
     messageEl.className = `${type}`;
     messageEl.appendChild(
-        document.createTextNode(`[${timestamp}] ${nickname}: ${message}`)
+        document.createTextNode(`[${moment().format("HH:mm")}] ${message}`)
     );
-    messages.appendChild(messageEl);
+    messageList.appendChild(messageEl);
 };
 
 chatForm.addEventListener("submit", (e) => {
@@ -18,7 +24,7 @@ chatForm.addEventListener("submit", (e) => {
 });
 
 socket.on("new message", (data) =>
-    appendMessage(data.nickname, data.message, data.type, data.timestamp)
+    appendMessage(data.message, data.type)
 );
 
 // Shut down cleanly upon server shutdown message

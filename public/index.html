@@ -7,7 +7,11 @@
     <!-- TODO add bootstrap -->
 </head>
 <body>
-    Your name: <input id="username" />
-    <br>Access password (if needed): <input id="password" />
+    <form action="chat.html" method="GET">
+        <label for="nickname">Your nickname:</label>
+        <input id="nickname" name="nickname" maxlength="32" required>
+        
+        <input type="submit" value="Connect">
+    </form>
 </body>
 </html>

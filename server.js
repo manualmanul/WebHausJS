@@ -14,5 +14,5 @@ app.get('/chat', (req, res) => {
 });
 
 http.listen(PORT, function() {
-  console.log("listening on *:3001");
+  console.log(`listening on *:${PORT}`);
 });

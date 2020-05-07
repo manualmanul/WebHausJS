@@ -6,44 +6,44 @@
 
 body {
     font-size: 13px;
+}
 
-    .messageList {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+#messageList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-        li {
-            padding: 5px 10px;
-            &:nth-child(odd) {
-                background: #eee;
-            }
-
-            .service {
-                color: gray;
-                font-weight: bold;
-            }
+    li {
+        padding: 5px 10px;
+        &:nth-child(odd) {
+            background: #eee;
         }
     }
 
-    #sendForm {
-        background: #000;
-        padding: 3px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+    .service {
+        color: gray;
+        font-weight: bold;
+    }
+}
 
-        #sendField {
-            border: 0;
-            padding: 10px;
-            width: 90%;
-            margin-right: 0.5%;
-        }
+#sendForm {
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
-        .sendButton {
-            width: 9%;
-            background: rgb(130, 224, 255);
-            border: none;
-            padding: 10px;
-        }
+    #sendField {
+        border: 0;
+        padding: 10px;
+        width: 90%;
+        margin-right: 0.5%;
+    }
+
+    .sendButton {
+        width: 9%;
+        background: rgb(130, 224, 255);
+        border: none;
+        padding: 10px;
     }
 }
