@@ -20,27 +20,27 @@ To set up this project on your machine, follow these instructions:
 
 ### Prerequisites
 
-* web server that can host the `public/` directory
-
-OR
-
+If using node:
 * Node.js 10.x or newer
 * npm
 
+Alternatively:
+* web server that can host the `public/` directory
+
 ### Installing
-
-Using a conventional web server like Nginx:
-
-* serve the `/public` to your clients
 
 Using a Node.JS web server:
 
 ```shell
 git clone https://github.com/manualmanul/WebHausJS.git
 cd WebHausJS
-npm
+npm i
 node server.js
 ```
+
+Using a conventional web server like Nginx:
+
+* serve `/public` to your clients
 
 ## Contributing
 
